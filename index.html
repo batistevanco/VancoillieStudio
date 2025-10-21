@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vancoillie Studio — Landing</title>
+  <meta name="description" content="Vancoillie Studio Landing Page" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="canonical" href="https://www.vancoilliestudio.be/">
+  <!-- Favicon -->    
+  <link rel="icon" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" sizes="48x48" href="../favicon-48x48.png">
+  <link rel="icon" sizes="96x96" href="../favicon-96x96.png">
+  <link rel="icon" sizes="192x192" href="../Favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon-180x180.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon-48x48.ico">
+
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0b1324',
+              sky: '#0ea5e9',
+              cyan: '#06b6d4',
+              mint: '#22d3ee'
+            }
+          },
+          fontFamily: {
+            display: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            glow: '0 0 80px rgba(14,165,233,.35)'
+          },
+          animation: {
+            grain: 'grain 8s steps(10) infinite',
+            float: 'float 10s ease-in-out infinite',
+            pulseRing: 'pulseRing 1.8s ease-out infinite',
+            hue: 'hue 12s linear infinite',
+          },
+          keyframes: {
+            grain: { '0%,100%': { transform: 'translate(0,0)' }, '10%': { transform: 'translate(-1%, -1%)' }, '20%': { transform: 'translate(1%, -1%)' }, '30%': { transform: 'translate(-1%, 1%)' }, '40%': { transform: 'translate(1%, 1%)' }, '50%': { transform: 'translate(0.5%, -0.5%)' }, '60%': { transform: 'translate(-0.5%, 0.5%)' }, '70%': { transform: 'translate(1%, 0)' }, '80%': { transform: 'translate(0, 1%)' }, '90%': { transform: 'translate(-1%, 0)' } },
+            float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
+            pulseRing: { '0%': { boxShadow: '0 0 0 0 rgba(14,165,233,.6)' }, '100%': { boxShadow: '0 0 0 40px rgba(14,165,233,0)' } },
+            hue: { '0%': { filter: 'hue-rotate(0deg)' }, '100%': { filter: 'hue-rotate(360deg)' } },
+          }
+        }
+      },
+      darkMode: 'media'
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body class="h-full bg-brand-dark text-white font-display grain">
+
+  <!-- BACKGROUND DECORATIONS -->
+  <div class="bg-orbit"></div>
+  <div class="grad-wipe absolute inset-0"></div>
+  <div class="pointer-events-none select-none" aria-hidden="true">
+    <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full blur-3xl" style="background:radial-gradient(circle, rgba(14,165,233,.35), transparent 60%)"></div>
+    <div class="absolute -bottom-16 -right-16 h-60 w-60 rounded-full blur-3xl animate-float" style="background:radial-gradient(circle, rgba(236,72,153,.28), transparent 60%)"></div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="relative z-20 min-h-screen flex items-center justify-center p-6">
+    <section class="w-full max-w-7xl mx-auto text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-1 text-xs sm:text-sm font-semibold text-white/80 shadow-glow animate-hue">
+        Ultra‑modern • Minimal • Fast
+      </div>
+
+      <!-- Huge brand wordmark -->
+      <h1 class="mt-6 md:mt-8 text-5xl sm:text-6xl md:text-[8rem] leading-[0.95] font-black tracking-tight hero-word">
+        <span class="block text-white">Vancoillie Studio</span>
+      </h1>
+
+      <!-- Subheading -->
+      <p class="mt-6 max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-white/70">
+        Crafting clean, fast, useful apps & software. Built with care. Designed to feel effortless.
+      </p>
+
+      <!-- Subheading -->
+      <p class="mt-6 max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-white/70">
+        A brand by Vancoillie IT Hulp.
+      </p>
+
+      <!-- CTA button -->
+      <div class="mt-10 flex justify-center">
+        <a href="home.html" class="magnet group relative inline-flex items-center gap-3 rounded-full px-7 py-4 sm:px-9 sm:py-5 text-base sm:text-lg font-semibold text-white ring-1 ring-white/20 bg-white/10 hover:bg-white/15 hover:ring-white/30 transition">
+          <span class="halo" aria-hidden="true"></span>
+          <span class="relative">Enter the website</span>
+          <svg class="relative h-5 w-5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+          <span class="absolute -z-10 inset-0 rounded-full animate-pulseRing"></span>
+        </a>
+      </div>
+
+      <!-- Tiny helper links (optional) -->
+      <div class="mt-6 text-xs sm:text-sm text-white/50">
+        Press <kbd class="px-1.5 py-0.5 rounded bg-white/10">Enter</kbd> to continue
+      </div>
+    </section>
+  </main>
+
+  <!-- CANVAS: interactive particle field (very light) -->
+  <canvas id="dots" class="fixed inset-0 -z-10"></canvas>
+
+  <script>
+    // Magnetic button hover effect
+    const btn = document.querySelector('.magnet');
+    const halo = btn?.querySelector('.halo');
+    btn?.addEventListener('pointermove', e => {
+      const rect = btn.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      halo?.style.setProperty('--x', x + '%');
+      halo?.style.setProperty('--y', y + '%');
+    });
+
+    // Keyboard: Enter goes to site
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        document.querySelector('.magnet')?.click();
+      }
+    });
+
+    // Very lightweight particle dots background
+    const c = document.getElementById('dots');
+    const ctx = c.getContext('2d');
+    let dpr = Math.max(1, window.devicePixelRatio || 1);
+    let W, H, dots;
+
+    function resize(){
+      W = c.width = Math.floor(innerWidth * dpr);
+      H = c.height = Math.floor(innerHeight * dpr);
+      c.style.width = innerWidth + 'px';
+      c.style.height = innerHeight + 'px';
+      init();
+    }
+
+    function init(){
+      const count = Math.floor((innerWidth * innerHeight) / 14000);
+      dots = Array.from({length: count}, () => ({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        vx: (Math.random() - 0.5) * 0.2 * dpr,
+        vy: (Math.random() - 0.5) * 0.2 * dpr,
+        r: (Math.random() * 1.2 + 0.4) * dpr
+      }));
+    }
+
+    function step(){
+      ctx.clearRect(0,0,W,H);
+      ctx.fillStyle = 'rgba(255,255,255,.7)';
+      dots.forEach(p => {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > W) p.vx *= -1;
+        if (p.y < 0 || p.y > H) p.vy *= -1;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+        ctx.fill();
+      });
+      requestAnimationFrame(step);
+    }
+
+    resize();
+    step();
+    addEventListener('resize', resize);
+  </script>
+</body>
+</html>
