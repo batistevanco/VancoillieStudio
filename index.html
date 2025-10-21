@@ -3,18 +3,67 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vancoillie Studio — Landing</title>
-  <meta name="description" content="Vancoillie Studio Landing Page" />
+  <title>Vancoillie Studio — Apps & Software</title>
+  <meta name="description" content="Vancoillie Studio builds modern apps and software focused on performance, elegant design, and user simplicity." />
+  <meta name="keywords" content="Vancoillie Studio, apps, software, iOS, webapps, UX, UI, development, Belgium, Vancoillie IT Hulp" />
   <meta name="theme-color" content="#0ea5e9" />
   <link rel="canonical" href="https://www.vancoilliestudio.be/">
-  <!-- Favicon -->    
-  <link rel="icon" sizes="32x32" href="../favicon-32x32.png">
-  <link rel="icon" sizes="48x48" href="../favicon-48x48.png">
-  <link rel="icon" sizes="96x96" href="../favicon-96x96.png">
-  <link rel="icon" sizes="192x192" href="../Favicon-192x192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../favicon-180x180.png">
-  <link rel="shortcut icon" type="image/x-icon" href="../favicon-48x48.ico">
 
+  <!-- Favicons -->
+  <link rel="icon" sizes="32x32" href="afbeeldingen/favicon-32x32.png">
+  <link rel="icon" sizes="48x48" href="afbeeldingen/favicon-48x48.png">
+  <link rel="icon" sizes="96x96" href="afbeeldingen/favicon-96x96.png">
+  <link rel="icon" sizes="192x192" href="afbeeldingen/Favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="afbeeldingen/favicon-180x180.png">
+  <link rel="shortcut icon" type="image/x-icon" href="afbeeldingen/favicon-48x48.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vancoillie Studio — Apps & Software" />
+  <meta property="og:description" content="Modern apps and software. Lightweight, fast, and with attention to detail." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.vancoilliestudio.be/" />
+  <meta property="og:image" content="https://www.vancoilliestudio.be/afbeeldingen/logo.png" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vancoillie Studio — Apps & Software" />
+  <meta name="twitter:description" content="Modern, fast, and elegant apps built by Vancoillie Studio." />
+  <meta name="twitter:image" content="https://www.vancoilliestudio.be/afbeeldingen/logo.png" />
+  <meta name="twitter:creator" content="@vancoilliestudio" />
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Vancoillie Studio",
+    "url": "https://www.vancoilliestudio.be/",
+    "logo": "https://www.vancoilliestudio.be/afbeeldingen/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/vancoilliestudio/",
+      "https://www.facebook.com/profile.php?id=61566806095389",
+      "https://www.linkedin.com/in/batiste-vancoillie-622562291/",
+      "https://github.com/batistevanco"
+    ],
+    "founder": "Batiste Vancoillie",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Vancoillie IT Hulp – Batiste Vancoillie",
+      "taxID": "BE1014303066"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Roeselare",
+      "addressCountry": "BE"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "info@vancoillieithulp.be"
+    }
+  }
+  </script>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -57,7 +106,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet"/>
-
   <link rel="stylesheet" href="css/index.css" />
 </head>
 <body class="h-full bg-brand-dark text-white font-display grain">
@@ -93,17 +141,17 @@
         A brand by Vancoillie IT Hulp.
       </p>
 
-      <!-- CTA button -->
-      <div class="mt-10 flex justify-center">
-        <a href="home.html" class="magnet group relative inline-flex items-center gap-3 rounded-full px-7 py-4 sm:px-9 sm:py-5 text-base sm:text-lg font-semibold text-white ring-1 ring-white/20 bg-white/10 hover:bg-white/15 hover:ring-white/30 transition">
-          <span class="halo" aria-hidden="true"></span>
-          <span class="relative">Enter the website</span>
-          <svg class="relative h-5 w-5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/>
-          </svg>
-          <span class="absolute -z-10 inset-0 rounded-full animate-pulseRing"></span>
-        </a>
-      </div>
+  <!-- CTA button -->
+  <div class="mt-10 flex justify-center">
+    <a href="home.html" class="magnet group relative inline-flex items-center gap-3 rounded-full px-7 py-4 sm:px-9 sm:py-5 text-base sm:text-lg font-semibold text-white ring-1 ring-white/20 bg-white/10 hover:bg-white/15 hover:ring-white/30 transition" aria-label="Enter the Vancoillie Studio website">
+      <span class="halo" aria-hidden="true"></span>
+      <span class="relative">Enter the website</span>
+      <svg class="relative h-5 w-5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/>
+      </svg>
+      <span class="absolute -z-10 inset-0 rounded-full animate-pulseRing"></span>
+    </a>
+  </div>
 
       <!-- Tiny helper links (optional) -->
       <div class="mt-6 text-xs sm:text-sm text-white/50">
@@ -113,7 +161,7 @@
   </main>
 
   <!-- CANVAS: interactive particle field (very light) -->
-  <canvas id="dots" class="fixed inset-0 -z-10"></canvas>
+  <canvas id="dots" class="fixed inset-0 -z-10" aria-hidden="true"></canvas>
 
   <script>
     // Magnetic button hover effect

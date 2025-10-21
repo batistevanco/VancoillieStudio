@@ -8,22 +8,29 @@
   <meta name="keywords" content="Vancoillie Studio, apps, software, iOS, webapps, UX, UI, development" />
   <meta name="theme-color" content="#0ea5e9" />
 
-  <link rel="canonical" href="https://www.vancoilliestudio.be/">
+  <link rel="canonical" href="https://www.vancoilliestudio.be/home.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Vancoillie Studio — Apps & Software" />
   <meta property="og:description" content="Modern apps and software. Lightweight, fast, and with attention to detail." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og-image.png" />
-  <meta property="og:url" content="https://vancoilliestudio.be/" />
+  <meta property="og:image" content="https://www.vancoilliestudio.be/afbeeldingen/logo.png" />
+  <meta property="og:url" content="https://www.vancoilliestudio.be/home.html" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vancoillie Studio — Apps & Software" />
+  <meta name="twitter:description" content="Modern, fast, and elegant apps built by Vancoillie Studio." />
+  <meta name="twitter:image" content="https://www.vancoilliestudio.be/afbeeldingen/logo.png" />
 
    <!-- Favicon -->    
-    <link rel="icon" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" sizes="48x48" href="../favicon-48x48.png">
-    <link rel="icon" sizes="96x96" href="../favicon-96x96.png">
-    <link rel="icon" sizes="192x192" href="../Favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon-180x180.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon-48x48.ico">
+    <link rel="icon" sizes="32x32" href="afbeeldingen/favicon-32x32.png">
+    <link rel="icon" sizes="48x48" href="afbeeldingen/favicon-48x48.png">
+    <link rel="icon" sizes="96x96" href="afbeeldingen/favicon-96x96.png">
+    <link rel="icon" sizes="192x192" href="afbeeldingen/Favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="afbeeldingen/favicon-180x180.png">
+    <link rel="shortcut icon" type="image/x-icon" href="afbeeldingen/favicon-48x48.ico">
 
   <!-- EmailJS SDK -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -38,7 +45,7 @@
         extend: {
           colors: {
             brand: {
-              blue: '#0ea5e9', // sky-500
+              blue: '#0866ff', // sky-500
               dark: '#0b1324',
               accent: '#ef4444', // red-500
             }
@@ -77,30 +84,74 @@
 
   <!-- ================= NAVBAR ================= -->
   <header class="sticky top-0 z-50 backdrop-blur-md border-b border-slate-200/60 dark:border-white/10 bg-white/70 dark:bg-brand-dark/60">
-    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 grid grid-cols-[auto,1fr,auto] items-center">
       <a href="#home" class="group inline-flex items-center gap-2">
-        <span class="relative inline-flex h-8 w-8 items-center justify-center rounded-xl bg-sky-500/10 text-sky-500 ring-1 ring-sky-500/30 shadow-glow">
+        <span class="relative inline-flex h-8 w-8 items-center justify-center rounded-xl bg-[#0866ff]/10 text-[#0866ff] ring-1 ring-[#0866ff]/30 shadow-glow">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
             <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zm0 2.236L6 8v8l6 3.236L18 16V8l-6-2.764z"/>
           </svg>
         </span>
-        <span class="font-display font-extrabold tracking-tight text-lg">Vancoillie <span class="text-sky-500">Studio</span></span>
+        <span class="font-display font-extrabold tracking-tight text-lg">Vancoillie <span class="text-[#0866ff]">Studio</span></span>
       </a>
-      <div class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#apps" class="hover:text-sky-500">Apps</a>
-        <a href="#features" class="hover:text-sky-500">Features</a>
-        <a href="#contact" class="hover:text-sky-500">Contact</a>
+      <div class="hidden md:flex items-center justify-center gap-6 text-sm justify-self-center">
+        <a href="#apps" class="hover:text-[#0866ff]">Apps</a>
+        <a href="#features" class="hover:text-[#0866ff]">Features</a>
+        <a href="#contact" class="hover:text-[#0866ff]">Contact</a>
       </div>
-      <div class="flex items-center gap-2">
-        <button id="themeToggle" class="rounded-lg p-2 ring-1 ring-slate-200/70 hover:ring-sky-500/40 hover:text-sky-500 dark:ring-white/10" aria-label="Toggle color mode">
+      <div class="flex items-center gap-2 justify-end md:ml-0 ml-auto justify-self-end">
+        <button id="themeToggle" class="rounded-lg p-2 ring-1 ring-slate-200/70 hover:ring-[#0866ff]/40 hover:text-[#0866ff] dark:ring-white/10" aria-label="Toggle color mode">
           <svg id="sun" class="h-5 w-5 hidden dark:inline" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.95 6.364-1.414-1.414M7.05 7.05 5.636 5.636m12.728 0L17.95 7.05M7.05 16.95l-1.414 1.414"/><circle cx="12" cy="12" r="4"/></svg>
           <svg id="moon" class="h-5 w-5 dark:hidden" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <a href="https://www.vancoillieithulp.be/CV/portfolio.html" class="hidden sm:inline-flex items-center rounded-xl bg-sky-500 px-3 py-2 text-sm font-semibold text-white shadow-glow hover:bg-sky-400">My Portfolio</a>
-        <a href="#contact" class="hidden sm:inline-flex items-center rounded-xl bg-sky-500 px-3 py-2 text-sm font-semibold text-white shadow-glow hover:bg-sky-400">Contact</a>
+        <a href="https://www.vancoillieithulp.be/CV/portfolio.html" class="hidden sm:inline-flex items-center rounded-xl bg-[#0866ff] px-3 py-2 text-sm font-semibold text-white shadow-glow hover:bg-[#0756e8]">My Portfolio</a>
+        <a href="#contact" class="hidden sm:inline-flex items-center rounded-xl bg-[#0866ff] px-3 py-2 text-sm font-semibold text-white shadow-glow hover:bg-[#0756e8]">Contact</a>
+        <!-- Mobile menu trigger -->
+        <button id="openMenu" class="md:hidden inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold ring-1 ring-slate-200/70 dark:ring-white/10 hover:text-[#0866ff] hover:ring-[#0866ff]/40" aria-label="Open menu">
+          <span>Menu</span><span class="text-[#0866ff] text-base leading-none">+</span>
+        </button>
       </div>
     </nav>
   </header>
+
+  <!-- ================ MOBILE MENU OVERLAY ================ -->
+  <div id="mobileMenu" class="fixed inset-0 z-[60] hidden">
+    <div id="menuBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <div class="relative mx-auto mt-4 mb-4 w-[92vw] max-w-[720px] rounded-3xl bg-white dark:bg-brand-dark text-slate-900 dark:text-slate-100 shadow-2xl ring-1 ring-slate-200/70 dark:ring-white/10 overflow-hidden">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-slate-200/70 dark:border-white/10">
+        <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">Menu</span>
+        <button id="closeMenu" class="inline-flex items-center gap-2 text-sm font-semibold hover:text-[#0866ff]" aria-label="Close menu">
+          <span>Close</span><span class="text-base">×</span>
+        </button>
+      </div>
+      <div class="px-6 sm:px-10 py-8">
+        <nav class="space-y-6">
+          <a href="#home" class="block font-extrabold tracking-tight text-[44px] sm:text-6xl leading-none hover:text-[#0866ff] menu-link">
+            HOME <sup class="text-[#0866ff] dark:text-[#0866ff] text-xl align-super">01</sup>
+          </a>
+          <a href="#apps" class="block font-extrabold tracking-tight text-[44px] sm:text-6xl leading-none hover:text-[#0866ff] menu-link">
+            APPS <sup class="text-[#0866ff] dark:text-[#0866ff] text-xl align-super">02</sup>
+          </a>
+          <a href="#features" class="block font-extrabold tracking-tight text-[44px] sm:text-6xl leading-none hover:text-[#0866ff] menu-link">
+            FEATURES <sup class="text-[#0866ff] dark:text-[#0866ff] text-xl align-super">03</sup>
+          </a>
+          <a href="#contact" class="block font-extrabold tracking-tight text-[44px] sm:text-6xl leading-none hover:text-[#0866ff] menu-link">
+            CONTACT <sup class="text-[#0866ff] dark:text-[#0866ff] text-xl align-super">04</sup>
+          </a>
+        </nav>
+        <div class="mt-12">
+          <div class="text-sm font-semibold text-[#0866ff] dark:text-[#0866ff] mb-3">Socials</div>
+          <div class="flex flex-wrap gap-6 text-lg">
+            <a href="https://www.facebook.com/profile.php?id=61566806095389" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/vancoilliestudio/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/32499873892" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/batiste-vancoillie-622562291/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/batistevanco" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.vancoillieithulp.be" target="_blank" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ================= HERO ================= -->
   <section id="home" class="relative overflow-hidden">
@@ -108,25 +159,25 @@
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div class="space-y-6 animate-fadeIn">
-          <span class="inline-flex items-center gap-2 rounded-full ring-1 ring-sky-500/30 bg-sky-500/10 px-3 py-1 text-xs font-semibold text-sky-600 dark:text-sky-300">Modern • User-first • Lightning fast</span>
+          <span class="inline-flex items-center gap-2 rounded-full ring-1 ring-[#0866ff]/30 bg-[#0866ff]/10 px-3 py-1 text-xs font-semibold text-[#0866ff] dark:text-[#0866ff]">Modern • User-first • Lightning fast</span>
           <h1 class="font-display text-4xl sm:text-5xl font-extrabold tracking-tight">
-            User-first.<span class="text-sky-500"> Always.</span>
+            User-first.<span class="text-[#0866ff]"> Always.</span>
           </h1>
           <p class="text-lg text-slate-600 dark:text-slate-300 max-w-xl">Vancoillie Studio creates minimalist, high-performance user-first apps with an eye for detail. From iOS to web — elegant, intuitive, and future‑proof.</p>
           <div class="flex flex-wrap gap-3">
-            <a href="#apps" class="inline-flex items-center rounded-xl bg-sky-500 px-5 py-3 text-sm font-semibold text-white shadow-glow hover:bg-sky-400">Discover the apps</a>
-            <a href="#apps" class="inline-flex items-center rounded-xl ring-1 ring-slate-200/80 dark:ring-white/10 px-5 py-3 text-sm font-semibold hover:text-sky-500">View screenshots</a>
+            <a href="#apps" class="inline-flex items-center rounded-xl bg-[#0866ff] px-5 py-3 text-sm font-semibold text-white shadow-glow hover:bg-[#0756e8]">Discover the apps</a>
+            <a href="#apps" class="inline-flex items-center rounded-xl ring-1 ring-slate-200/80 dark:ring-white/10 px-5 py-3 text-sm font-semibold hover:text-[#0866ff]">View screenshots</a>
           </div>
           <div class="flex items-center gap-6 pt-4 text-sm text-slate-500 dark:text-slate-400">
             <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span>Performance‑first</div>
-            <div class="hidden sm:flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-sky-500"></span>User‑first</div>
+            <div class="hidden sm:flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-[#0866ff]"></span>User‑first</div>
           </div>
         </div>
-        <div class="relative">
-          <div class="absolute -top-12 -left-8 h-40 w-40 rounded-full bg-sky-500/20 blur-3xl"></div>
-          <div class="absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-rose-500/20 blur-3xl"></div>
+        <div class="relative hidden lg:block">
+          <div class="absolute -top-12 -left-8 h-40 w-40 rounded-full bg-sky-500/20 blur-3xl" aria-hidden="true"></div>
+          <div class="absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-rose-500/20 blur-3xl" aria-hidden="true"></div>
           <div class="glass rounded-3xl p-3 shadow-xl animate-float">
-            <img src="1.png" alt="App mockups" class="rounded-2xl object-cover w-full h-[420px]"/>
+            <img src="afbeeldingen/AppMockup.svg" alt="App mockups" class="rounded-2xl object-cover w-full h-[500px]"/>
           </div>
         </div>
       </div>
@@ -157,8 +208,8 @@
             <li>AI Chatbot</li>
           </ul>
           <div class="mt-auto pt-4 flex items-center gap-3">
-            <a class="inline-flex items-center rounded-lg bg-sky-500 px-3 py-2 text-xs font-semibold text-white shadow-glow group-hover:bg-sky-400" href="#">Coming soon</a>
-            <button type="button" class="inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold ring-1 ring-slate-200/80 dark:ring-white/10 hover:text-sky-500 screens-btn" data-app="abbobuddy">View screenshots</button>
+            <a class="inline-flex items-center rounded-lg bg-[#0866ff] px-3 py-2 text-xs font-semibold text-white shadow-glow group-hover:bg-[#0756e8]" href="#">Coming soon</a>
+            <button type="button" class="inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold ring-1 ring-slate-200/80 dark:ring-white/10 hover:text-[#0866ff] screens-btn" data-app="abbobuddy">View screenshots</button>
           </div>
         </article>
 
@@ -176,8 +227,8 @@
             <li>AI Chatbot</li>
           </ul>
           <div class="mt-auto pt-4 flex items-center gap-3">
-            <a class="inline-flex items-center rounded-lg bg-sky-500 px-3 py-2 text-xs font-semibold text-white shadow-glow group-hover:bg-sky-400" href="#">Coming soon</a>
-            <button type="button" class="inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold ring-1 ring-slate-200/80 dark:ring-white/10 hover:text-sky-500 screens-btn" data-app="inmandje">View screenshots</button>
+            <a class="inline-flex items-center rounded-lg bg-[#0866ff] px-3 py-2 text-xs font-semibold text-white shadow-glow group-hover:bg-[#0756e8]" href="#">Coming soon</a>
+            <button type="button" class="inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold ring-1 ring-slate-200/80 dark:ring-white/10 hover:text-[#0866ff] screens-btn" data-app="inmandje">View screenshots</button>
           </div>
         </article>
 
@@ -195,8 +246,8 @@
             <li>CSV import/export</li>
           </ul>
           <div class="mt-auto pt-4 flex items-center gap-3">
-            <a class="inline-flex items-center rounded-lg bg-sky-500 px-3 py-2 text-xs font-semibold text-white shadow-glow group-hover:bg-sky-400" href="../budgetplanner/index.html">Open web app</a>
-            <button type="button" class="inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold ring-1 ring-slate-200/80 dark:ring-white/10 hover:text-sky-500 screens-btn" data-app="budgetplanner">View screenshots</button>
+            <a class="inline-flex items-center rounded-lg bg-[#0866ff] px-3 py-2 text-xs font-semibold text-white shadow-glow group-hover:bg-[#0756e8]" href="../budgetplanner/index.html">Open web app</a>
+            <button type="button" class="inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold ring-1 ring-slate-200/80 dark:ring-white/10 hover:text-[#0866ff] screens-btn" data-app="budgetplanner">View screenshots</button>
           </div>
         </article>
 
@@ -204,18 +255,18 @@
         <article class="group relative rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5 hover:shadow-xl transition-shadow cursor-pointer app-card h-full flex flex-col" data-app="news">
           <div class="flex items-center justify-between">
             <h3 class="font-semibold text-xl">Vancoillie News</h3>
-            <span class="rounded-full bg-sky-500/10 text-sky-600 dark:text-sky-300 text-xs px-3 py-1 ring-1 ring-sky-500/30">Mobile</span>
+            <span class="rounded-full bg-[#0866ff]/10 text-[#0866ff] dark:text-[#0866ff] text-xs px-3 py-1 ring-1 ring-[#0866ff]/30">Mobile</span>
           </div>
           <p class="mt-3 text-slate-600 dark:text-slate-300">Own news feed app with clean UI, categories, and smart caching. (English & Dutch)</p>
           <ul class="mt-4 text-sm text-slate-500 dark:text-slate-400 space-y-1 list-disc list-inside">
             <li>Offline cache</li>
             <li>Push notifications</li>
             <li>Detailed view of an article</li>
-            <li>Filter by categorie</li>
+            <li>Filter by category</li>
           </ul>
           <div class="mt-auto pt-4 flex items-center gap-3">
-            <a class="inline-flex items-center rounded-lg bg-sky-500 px-3 py-2 text-xs font-semibold text-white shadow-glow group-hover:bg-sky-400" href="#">In development</a>
-            <button type="button" class="inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold ring-1 ring-slate-200/80 dark:ring-white/10 hover:text-sky-500 screens-btn" data-app="news">View screenshots</button>
+            <a class="inline-flex items-center rounded-lg bg-[#0866ff] px-3 py-2 text-xs font-semibold text-white shadow-glow group-hover:bg-[#0756e8]" href="#">In development</a>
+            <button type="button" class="inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold ring-1 ring-slate-200/80 dark:ring-white/10 hover:text-[#0866ff] screens-btn" data-app="news">View screenshots</button>
           </div>
         </article>
 
@@ -252,7 +303,7 @@
       </div>
       <div class="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5">
-          <div class="h-10 w-10 rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-300 flex items-center justify-center">
+          <div class="h-10 w-10 rounded-xl bg-[#0866ff]/10 text-[#0866ff] dark:text-[#0866ff] flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l4 7h-8l4-7zm0 20l-4-7h8l-4 7z"/></svg>
           </div>
           <h3 class="mt-4 font-semibold text-lg">Fast by default</h3>
@@ -305,30 +356,30 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl">
         <h2 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight">Contact</h2>
-        <p class="mt-3 text-slate-600 dark:text-slate-300">Prefer to email directly? <a class="text-sky-600 dark:text-sky-400 font-semibold" href="mailto:info@vancoillieithulp.be">info@vancoillieithulp.be</a></p>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Prefer to email directly? <a class="text-[#0866ff] dark:text-[#0866ff] font-semibold" href="mailto:info@vancoillieithulp.be">info@vancoillieithulp.be</a></p>
       </div>
       <form id="contact-form" class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label for="from_name" class="block text-sm font-medium mb-1">Name</label>
           <input type="text" name="from_name" id="from_name" required
                  placeholder="Your name"
-                 class="w-full rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+                 class="w-full rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0866ff]" />
         </div>
         <div>
           <label for="from_email" class="block text-sm font-medium mb-1">Email</label>
           <input type="email" name="from_email" id="from_email" required
                  placeholder="Your email address"
-                 class="w-full rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+                 class="w-full rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0866ff]" />
         </div>
         <div class="md:col-span-2">
           <label for="message" class="block text-sm font-medium mb-1">Message</label>
           <textarea name="message" id="message" rows="6" required
                     placeholder="Tell me a little about your project or question"
-                    class="w-full rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+                    class="w-full rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0866ff]"></textarea>
         </div>
         <div class="md:col-span-2 flex items-center justify-between">
           <p class="text-xs text-slate-500 dark:text-slate-400">We only store what's necessary to reply.</p>
-          <button type="submit" id="sendBtn" class="inline-flex items-center rounded-xl bg-sky-500 px-5 py-3 text-sm font-semibold text-white shadow-glow hover:bg-sky-400 disabled:opacity-60 disabled:cursor-not-allowed"><svg id="sendSpinner" class="-ml-0.5 mr-2 h-4 w-4 animate-spin hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10" class="opacity-25" /><path d="M12 2a10 10 0 0 1 10 10" class="opacity-75" /></svg><span id="sendText">Send</span></button>
+          <button type="submit" id="sendBtn" class="inline-flex items-center rounded-xl bg-[#0866ff] px-5 py-3 text-sm font-semibold text-white shadow-glow hover:bg-[#0756e8] disabled:opacity-60 disabled:cursor-not-allowed"><svg id="sendSpinner" class="-ml-0.5 mr-2 h-4 w-4 animate-spin hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10" class="opacity-25" /><path d="M12 2a10 10 0 0 1 10 10" class="opacity-75" /></svg><span id="sendText">Send</span></button>
         </div>
       </form>
     </div>
@@ -340,12 +391,12 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid gap-8 md:grid-cols-2">
       <div>
         <div class="inline-flex items-center gap-2">
-          <span class="relative inline-flex h-8 w-8 items-center justify-center rounded-xl bg-sky-500/10 text-sky-500 ring-1 ring-sky-500/30 shadow-glow">
+          <span class="relative inline-flex h-8 w-8 items-center justify-center rounded-xl bg-[#0866ff]/10 text-[#0866ff] ring-1 ring-[#0866ff]/30 shadow-glow">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
               <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zm0 2.236L6 8v8l6 3.236L18 16V8l-6-2.764z"/>
             </svg>
           </span>
-          <span class="font-display font-extrabold tracking-tight">Vancoillie <span class="text-sky-500">Studio</span></span>
+          <span class="font-display font-extrabold tracking-tight">Vancoillie <span class="text-[#0866ff]">Studio</span></span>
         </div>
         <p class="mt-3 text-sm text-slate-600 dark:text-slate-300 max-w-md">Simple experiences. User-first Always. Visible results.</p>
       </div>
@@ -369,6 +420,30 @@
   </footer>
 
 
+
+  <script>
+    // Mobile menu open/close
+    (function () {
+      const menu = document.getElementById('mobileMenu');
+      const openBtn = document.getElementById('openMenu');
+      const closeBtn = document.getElementById('closeMenu');
+      const backdrop = document.getElementById('menuBackdrop');
+      const links = document.querySelectorAll('#mobileMenu .menu-link');
+      function open() {
+        menu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+      function close() {
+        menu.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+      openBtn?.addEventListener('click', open);
+      closeBtn?.addEventListener('click', close);
+      backdrop?.addEventListener('click', close);
+      links.forEach(a => a.addEventListener('click', close));
+      window.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.classList.contains('hidden')) close(); });
+    })();
+  </script>
 
   <script type="text/javascript">
    document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -427,12 +502,26 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Vancoillie Studio",
-    "url": "https://vancoilliestudio.be/",
-    "logo": "https://vancoilliestudio.be/logo.png",
+    "url": "https://www.vancoilliestudio.be/",
+    "logo": "https://www.vancoilliestudio.be/afbeeldingen/logo.png",
     "sameAs": [
-      "https://www.instagram.com/vancoillieithulp/",
-      "https://www.facebook.com/profile.php?id=61566806095389"
+      "https://www.instagram.com/vancoilliestudio/",
+      "https://www.facebook.com/profile.php?id=61566806095389",
+      "https://www.linkedin.com/in/batiste-vancoillie-622562291/",
+      "https://github.com/batistevanco"
     ],
+    "founder": "Batiste Vancoillie",
+    "foundingDate": "2024",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Roeselare",
+      "addressCountry": "BE"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "info@vancoillieithulp.be"
+    },
     "parentOrganization": {
       "@type": "Organization",
       "name": "Vancoillie IT Hulp – Batiste Vancoillie",
