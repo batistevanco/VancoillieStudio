@@ -158,8 +158,8 @@
     <div aria-hidden="true" class="pointer-events-none absolute inset-0 grid-bg bg-gradient-to-b from-sky-50 via-white to-white dark:from-sky-900/20 dark:via-brand-dark dark:to-brand-dark"></div>
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        <div class="space-y-6 animate-fadeIn">
-          <span class="inline-flex items-center gap-2 rounded-full ring-1 ring-[#0866ff]/30 bg-[#0866ff]/10 px-3 py-1 text-xs font-semibold text-[#0866ff] dark:text-[#0866ff]">Modern • User-first • Lightning fast</span>
+        <div class="space-y-6" data-reveal>
+            <span class="inline-flex items-center gap-2 rounded-full ring-1 ring-[#0866ff]/30 bg-[#0866ff]/10 px-3 py-1 text-xs font-semibold text-[#0866ff] dark:text-[#0866ff]">Modern • User-first • Lightning fast</span>
           <h1 class="font-display text-4xl sm:text-5xl font-extrabold tracking-tight">
             User-first.<span class="text-[#0866ff]"> Always.</span>
           </h1>
@@ -176,7 +176,7 @@
         <div class="relative hidden lg:block">
           <div class="absolute -top-12 -left-8 h-40 w-40 rounded-full bg-sky-500/20 blur-3xl" aria-hidden="true"></div>
           <div class="absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-rose-500/20 blur-3xl" aria-hidden="true"></div>
-          <div class="glass rounded-3xl p-3 shadow-xl animate-float">
+          <div class="glass rounded-3xl p-3 shadow-xl animate-float" data-reveal>
             <img src="afbeeldingen/AppMockup.svg" alt="App mockups" class="rounded-2xl object-cover w-full h-[500px]"/>
           </div>
         </div>
@@ -194,9 +194,9 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 items-stretch">
-        <!-- AbboBuddy -->
-        <article class="group relative rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5 hover:shadow-xl transition-shadow cursor-pointer app-card h-full flex flex-col" data-app="abbobuddy">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 items-stretch" data-reveal-group data-stagger="40">
+          <!-- AbboBuddy -->
+        <article class="group relative rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5 hover:shadow-xl transition-shadow cursor-pointer app-card h-full flex flex-col" data-reveal data-app="abbobuddy">
           <div class="flex items-center justify-between">
             <h3 class="font-semibold text-xl">AbboBuddy</h3>
             <span class="rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 text-xs px-3 py-1 ring-1 ring-emerald-500/30">Mobile</span>
@@ -214,7 +214,7 @@
         </article>
 
         <!-- InMandje -->
-        <article class="group relative rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5 hover:shadow-xl transition-shadow cursor-pointer app-card h-full flex flex-col" data-app="inmandje">
+        <article class="group relative rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5 hover:shadow-xl transition-shadow cursor-pointer app-card h-full flex flex-col" data-reveal data-app="inmandje">
           <div class="flex items-center justify-between">
             <h3 class="font-semibold text-xl">InMandje</h3>
             <span class="rounded-full bg-violet-500/10 text-violet-600 dark:text-violet-300 text-xs px-3 py-1 ring-1 ring-violet-500/30">Mobile</span>
@@ -233,7 +233,7 @@
         </article>
 
         <!-- Budgetplanner -->
-        <article class="group relative rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5 hover:shadow-xl transition-shadow cursor-pointer app-card h-full flex flex-col" data-app="budgetplanner">
+        <article class="group relative rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5 hover:shadow-xl transition-shadow cursor-pointer app-card h-full flex flex-col" data-reveal data-app="budgetplanner">
           <div class="flex items-center justify-between">
             <h3 class="font-semibold text-xl">Budgetplanner</h3>
             <span class="rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-300 text-xs px-3 py-1 ring-1 ring-amber-500/30">Web</span>
@@ -252,7 +252,7 @@
         </article>
 
         <!-- Vancoillie News -->
-        <article class="group relative rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5 hover:shadow-xl transition-shadow cursor-pointer app-card h-full flex flex-col" data-app="news">
+        <article class="group relative rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5 hover:shadow-xl transition-shadow cursor-pointer app-card h-full flex flex-col" data-reveal data-app="news">
           <div class="flex items-center justify-between">
             <h3 class="font-semibold text-xl">Vancoillie News</h3>
             <span class="rounded-full bg-[#0866ff]/10 text-[#0866ff] dark:text-[#0866ff] text-xs px-3 py-1 ring-1 ring-[#0866ff]/30">Mobile</span>
@@ -301,36 +301,36 @@
         <h2 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight">Why Vancoillie Studio?</h2>
         <p class="mt-3 text-slate-600 dark:text-slate-300">I build fast apps with a user‑first approach, a simple clear UI, secure data practices, and reliable support.</p>
       </div>
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5">
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6" >
+        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5" data-reveal>
           <div class="h-10 w-10 rounded-xl bg-[#0866ff]/10 text-[#0866ff] dark:text-[#0866ff] flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l4 7h-8l4-7zm0 20l-4-7h8l-4 7z"/></svg>
           </div>
           <h3 class="mt-4 font-semibold text-lg">Fast by default</h3>
           <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">I set a high standard for performance. Loading fast is our priority.</p>
         </div>
-        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5">
+        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5" data-reveal>
           <div class="h-10 w-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4 13h16v-2H4v2zm0 6h10v-2H4v2zM4 5v2h16V5H4z"/></svg>
           </div>
           <h3 class="mt-4 font-semibold text-lg">User‑first design</h3>
           <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">I listen, test, and iterate. Flows match how people think—fewer taps, clearer choices.</p>
         </div>
-        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5">
+        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5" data-reveal>
           <div class="h-10 w-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-300 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l8 6-8 6-8-6 8-6zm0 14l8-6v8H4v-8l8 6z"/></svg>
           </div>
           <h3 class="mt-4 font-semibold text-lg">Secure data</h3>
           <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Collect less and store safely: encryption in transit, least‑privilege access, and transparent settings.</p>
         </div>
-        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5">
+        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5" data-reveal>
           <div class="h-10 w-10 rounded-xl bg-fuchsia-500/10 text-fuchsia-600 dark:text-fuchsia-300 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
           </div>
           <h3 class="mt-4 font-semibold text-lg">Simple, clear UI</h3>
           <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">No clutter. Clean layouts and readable typography so anyone can get things done instantly.</p>
         </div>
-        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5">
+        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5" data-reveal>
           <div class="h-10 w-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-300 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2l8 4v6c0 5.25-3.5 9.74-8 10-4.5-.26-8-4.75-8-10V6l8-4zM9 10h2v4H9v-4zm4 0h2v2h-2v-2z"/>
@@ -339,7 +339,7 @@
           <h3 class="mt-4 font-semibold text-lg">Private analytics</h3>
           <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">No trackers or advertising. We only collect anonymous, aggregated metrics — and only with your consent.</p>
         </div>
-        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5">
+        <div class="rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 p-6 bg-white/70 dark:bg-white/5" data-reveal>
           <div class="h-10 w-10 rounded-xl bg-rose-500/10 text-rose-600 dark:text-rose-300 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v8H4z"/><path d="M2 14h20v2H2zM2 18h20v2H2z"/></svg>
           </div>
@@ -358,26 +358,26 @@
         <h2 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight">Contact</h2>
         <p class="mt-3 text-slate-600 dark:text-slate-300">Prefer to email directly? <a class="text-[#0866ff] dark:text-[#0866ff] font-semibold" href="mailto:info@vancoillieithulp.be">info@vancoillieithulp.be</a></p>
       </div>
-      <form id="contact-form" class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <form id="contact-form" class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4" data-reveal-group>
         <div>
-          <label for="from_name" class="block text-sm font-medium mb-1">Name</label>
+          <label for="from_name" class="block text-sm font-medium mb-1" data-reveal>Name</label>
           <input type="text" name="from_name" id="from_name" required
                  placeholder="Your name"
                  class="w-full rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0866ff]" />
         </div>
         <div>
-          <label for="from_email" class="block text-sm font-medium mb-1">Email</label>
+          <label for="from_email" class="block text-sm font-medium mb-1" data-reveal>Email</label>
           <input type="email" name="from_email" id="from_email" required
                  placeholder="Your email address"
                  class="w-full rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0866ff]" />
         </div>
         <div class="md:col-span-2">
-          <label for="message" class="block text-sm font-medium mb-1">Message</label>
+          <label for="message" class="block text-sm font-medium mb-1" data-reveal>Message</label>
           <textarea name="message" id="message" rows="6" required
                     placeholder="Tell me a little about your project or question"
                     class="w-full rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/70 dark:bg-white/5 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0866ff]"></textarea>
         </div>
-        <div class="md:col-span-2 flex items-center justify-between">
+        <div class="md:col-span-2 flex items-center justify-between" data-reveal>
           <p class="text-xs text-slate-500 dark:text-slate-400">We only store what's necessary to reply.</p>
           <button type="submit" id="sendBtn" class="inline-flex items-center rounded-xl bg-[#0866ff] px-5 py-3 text-sm font-semibold text-white shadow-glow hover:bg-[#0756e8] disabled:opacity-60 disabled:cursor-not-allowed"><svg id="sendSpinner" class="-ml-0.5 mr-2 h-4 w-4 animate-spin hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10" class="opacity-25" /><path d="M12 2a10 10 0 0 1 10 10" class="opacity-75" /></svg><span id="sendText">Send</span></button>
         </div>
@@ -387,8 +387,8 @@
   
 
   <!-- ================= FOOTER ================= -->
-  <footer class="border-t border-slate-200/60 dark:border-white/10">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid gap-8 md:grid-cols-2">
+<footer class="relative z-20 border-t border-slate-200/60 dark:border-white/10">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid gap-8 md:grid-cols-2">
       <div>
         <div class="inline-flex items-center gap-2">
           <span class="relative inline-flex h-8 w-8 items-center justify-center rounded-xl bg-[#0866ff]/10 text-[#0866ff] ring-1 ring-[#0866ff]/30 shadow-glow">
@@ -641,6 +641,43 @@
       }
     });
   </script>
+
+  <script>
+  // Scroll reveal (IntersectionObserver) + group staggering
+  (function () {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+          document.querySelectorAll('[data-reveal-group]').forEach(group => {
+            const step = parseInt(group.getAttribute('data-stagger') || '80', 10);
+            const kids = group.querySelectorAll(':scope [data-reveal]');
+            kids.forEach((el, i) => {
+              el.style.setProperty('--reveal-delay', (i * step) + 'ms');
+            });
+          });
+
+    const items = document.querySelectorAll('[data-reveal]');
+    if (reduce) { items.forEach(el => el.classList.add('revealed')); return; }
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -20% 0px' });
+
+    items.forEach(el => io.observe(el));
+  })();
+
+
+  window.addEventListener('scroll', () => {
+  document.querySelectorAll('.parallax').forEach(el => {
+    el.style.transform = `translateY(${window.scrollY * 0.1}px)`;
+  });
+});
+
+</script>
 
   <script>
     // Dark mode toggle — persist in localStorage
