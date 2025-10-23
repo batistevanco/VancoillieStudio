@@ -70,3 +70,37 @@
   [data-reveal]{ opacity: 1 !important; transform: none !important; }
 }
 
+/* Gradient text on hover – same look as the hero/why title */
+.gradient-hover {
+  transition: color .25s ease, background .25s ease;
+}
+.gradient-hover:hover,
+.gradient-hover:focus-visible
+.group:hover .gradient-hover,
+.group:focus-visible .gradient-hover {
+  color: transparent;
+  background-image: linear-gradient(90deg, #38bdf8, #f472b6, #fdba74); /* sky-400 → fuchsia-400 → orange-300 */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Forceer gradient op label + symbool binnen de mobiele menuknoppen */
+#openMenu:hover span,
+#openMenu:focus-visible span,
+#closeMenu:hover span,
+#closeMenu:focus-visible span {
+  color: transparent;
+  background-image: linear-gradient(90deg, #0ea5e9, #8b5cf6, #ec4899, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---- Trust strip ---- */
+.trust-marquee{ animation: trust-marquee 22s linear infinite; padding-block: .25rem; }
+.trust-badge{ white-space: nowrap; font-size:.85rem; padding:.5rem .75rem; border-radius:.75rem; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); }
+@keyframes trust-marquee{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
+
+
+
+
